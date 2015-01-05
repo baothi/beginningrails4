@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1299171386">
+    <data-source source="LOCAL" name="Rails beginningrails4: development" uuid="e0cb2c71-846c-4b76-a59d-9acf6c3d11c1">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/beginningrails4</jdbc-url>
+      <user-name>baothi</user-name>
+      <user-password>df9bdf98df99df9edf9fdf9c</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails beginningrails4: test" uuid="e7f1e8fc-1f0b-4539-a3d8-5e23111f9502">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:beginningrails4_test</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails beginningrails4: production" uuid="39530d11-7450-44eb-b442-30cdf0e76051">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:beginningrails4_production</jdbc-url>
+      <user-name>beginningrails4</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe8dfefdfeddfe3dfe4dfe4dfe3dfe4dfeddff8dfebdfe3dfe6dff9df9edff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

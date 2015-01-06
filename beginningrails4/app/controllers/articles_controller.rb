@@ -37,6 +37,16 @@ class ArticlesController < ApplicationController
     end
   end
 
+
+  # def create
+  #   @user = User.new(user_params)
+  #   if @user.save
+  #     redirect_to articles_path, noticle: 'User successfully added'
+  #   else
+  #     render action: :new
+  #   end
+  # end
+
   # PATCH/PUT /articles/1
   # PATCH/PUT /articles/1.json
   def update

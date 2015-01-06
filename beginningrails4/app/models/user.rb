@@ -2,8 +2,7 @@ require 'digest'
 class User < ActiveRecord::Base
   validates_uniqueness_of :email
   validates_length_of :email, :within => 5..50
-  validates_format_of :email, :with => /^[^@][\w.-]+@[\w.-]+[.][a-z]{2,4}$/i
-  #validates_format_of :email, :with => /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i
+  validates_format_of :email, :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
   validates_confirmation_of :password
   validates_length_of :password, :within => 4..20
   validates_presence_of :password, :if => :password_required?
@@ -12,6 +11,7 @@ class User < ActiveRecord::Base
            :dependent => :nullify
   has_many :replies, :through => :articles, :source => :comments
   before_save :encrypt_new_password
+  attr_accessible  :password, :password_confirmation
   def self.authenticate(email, password)
     user = find_by_email(email)
     return user if user && user.authenticated?(password)

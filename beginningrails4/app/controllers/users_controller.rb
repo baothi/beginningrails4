@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.new(user_params[:user])
     if @user.save
       redirect_to articles_path, noticle: 'User successfully added'
     else

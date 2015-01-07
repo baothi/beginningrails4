@@ -11,7 +11,8 @@ class User < ActiveRecord::Base
            :dependent => :nullify
   has_many :replies, :through => :articles, :source => :comments
   before_save :encrypt_new_password
-  protected_attributes  :password
+  #protected_attributes  :password
+  attr_accessor :password
   def self.authenticate(email, password)
     user = find_by_email(email)
     return user if user && user.authenticated?(password)

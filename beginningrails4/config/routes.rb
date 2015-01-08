@@ -5,9 +5,8 @@ Rails.application.routes.draw do
   end
   resources :users
   resources :session, :only => [:new, :create, :destroy]
-  get '/login' => "sessions#new", :as => "login"
-
-  get '/logout' => "Sessions#destroy", :as => "logout"
+   get '/login' => "sessions#new", :as => "login"
+  # get '/logout' => "Sessions#destroy", :as => "logout"
 
 
   # The priority is based upon order of creation: first created -> highest priority.
